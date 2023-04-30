@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EL-GNDY | e-commerce</title>
+
+    <!-- main template  -->
+    <link rel="stylesheet" href="./CSS/style.css">
+    <!-- render all element normally -->
+    <link rel="stylesheet" href="./CSS/normalize.css">
+    <!-- use font awesome -->
+     <link rel="stylesheet" href="css/all.css">
+    <link href="/assests/css/all.css" rel="stylesheet">
+    <link rel="stylesheet" href="./assests/css/regular.css">
+    <link rel="stylesheet" href="./assests/css/fontawesome.min.css">
+
+</head>
+<body>
+    <nav class="navbar">
+        <a href="#"><img src="./images/Logo/1.png" class="logo" alt="EL-GNDY logo"></a>
+        <div class="fle">
+        <ul class="navbar-nav" id="navbar">
+            <li ><a class="active" aria-current="page" href="index.html">Home</a></li>
+            <li ><a class="shop" href="shop.html">Shop</a></li>
+            <li ><a class="about" href="about.html">About</a></li>
+            <li ><a class="contact"  href="contact.html">Contact US</a></li>
+            <!-- <li ><i class="fa fa-3x fa-shopping-bag" ></i></li>
+            <span class="valuecart">0</span> -->
+            <i class="far fa-times close" id="close"></i>
+        </ul>
+        <div id="mobile">
+            <i id="bar" class="fas fa-outdent fa-2xl"></i>
+        </div>
+            <i class="fa fa-3x fa-shopping-bag" ></i>
+            <span id="valuecart" class="valuecart">0</span>
+            </div>
+    </nav>
+
+    <header id="home" >
+        <div class="content">
+            <div class="images">
+                <img class="imgselect" src="./images/banner/10.png">
+                <img class="imgselect" src="./images/banner/11.png">
+                <img class="imgselect" src="./images/banner/3.png">
+                <img class="imgselect" src="./images/banner/12.png">
+                <img class="imgselect" src="./images/banner/1.png">
+            </div>
+            <div class="btm-slides">
+                <span onclick="btm_slide(1)"></span>
+                <span onclick="btm_slide(2)"></span>
+                <span onclick="btm_slide(3)"></span>
+                <span onclick="btm_slide(4)"></span>
+                <span onclick="btm_slide(5)"></span>
+            </div>
+            <div class="sliders left" onclick="side_slide(-1)">
+                <span class="fas fa-angle-left"></span>
+            </div>
+            <div class="sliders right" onclick="side_slide(1)">
+                <span class="fas fa-angle-right"></span>
+            </div>
+        </div>
+    </header> 
+
+    <section id="brand" class="section-b1">
+            <img src="./images/features/b1.png" alt="">
+            <img src="./images/features/b7.png" alt="">
+            <img src="./images/features/b3.png" alt="">
+            <img src="./images/features/b4.png" alt="">
+            <img src="./images/features/b8.png" alt="">
+            <img src="./images/features/b9.png" alt="">
+            <img src="./images/features/b10.png" alt="">
+            <img src="./images/features/b5.png" alt="">
+    </section>
+
+    <section id="sm-banner" class="section-b1">
+        <div class="banner-box">
+            <h4>Crazy Deals</h4>
+            <h2>buy 1 get 1 free</h2>
+            <span>The best clasic dress is on sale</span>
+            <button class="white">Explore More</button>
+        </div>
+        <div class="banner-box box2">
+            <h4>Spring / summer</h4>
+            <h2>Upcomming season</h2>
+            <span>The best clasic dress is on sale</span>
+            <button class="white">Collection</button>
+        </div>
+    </section>
+
+    <section id="banner3" class="section-b1">
+        <div class="banner-box">
+            <h2>Seasonal seal</h2>
+            <h3>Winter Collection -50% OFF</h3>
+        </div>
+        <div class="banner-box bbox2">       
+            <h2>Upcomming season</h2>
+            <h3>Winter Collection -50% OFF</h3>
+        </div>        
+        <div class="banner-box bbox3">       
+            <h2>Upcomming season</h2>
+            <h3>Winter Collection -50% OFF</h3>
+        </div>
+    </section>
+
+    <div id="banner" class="index-banner">
+        <h4>Repair Services</h4>
+        <h2>UP to <span>70% of </span>- all T-Shirts [&] Accessories</h2>
+        <button>Explore More</button>
+    </div>
+
+    <section id="shop" class="section-b1">
+        <h2>Our Products</h2>
+        <p>Summer Collection, New Modern design.</p>
+            <div class = "filter-container">
+                <div class = "category-head">
+                    <ul>
+                        <div class = "category-title activ" id = "all">
+                            <li>All</li>
+                            <span><i class = "fas fa-border-all"></i></span>
+                        </div>
+                        <div class = "category-title" id = "boy">
+                            <li>boys</li>
+                            <span><i class = "fa fa-baby"></i></span>
+                        </div>
+                        <div class = "category-title" id = "men">
+                            <li>mens</li>
+                            <span><i class = "fas fa-person"></i></span>
+                        </div>
+                        <div class = "category-title" id = "other">
+                            <li>Other</li>
+                            <span><i class = "fa fa-stopwatch"></i></span>
+                        </div>
+                        <div class = "category-title" id = "girl">
+                            <li>girls</li>
+                            <span><i class = "fas fa-person-dress"></i></span>
+                        </div>
+                        <div class = "category-title" id = "shoes">
+                            <li>shoes</li>
+                            <span><i class = "fas fa-shoe-prints"></i></span>
+                        </div>
+                        <div class = "category-title" id = "sport">
+                            <li>Sports</li>
+                            <span><i class = "fas fa-running"></i></span>
+                        </div>
+                    </ul>
+                </div>
+            </div>
+            <div class = "posts-collect">
+                <div class="pro-container posts-main-container">
+                    <div class="pro all men" onclick="window.location.href='productdetails.html';">
+                        <img src="./images/products/a1.jpg" alt="">
+                        <div class="des">
+                            <span>adidas</span>
+                            <h5>Cartoon Astronaut T-Shirts</h5><hr>
+                            <div class="star">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <h4>$75</h4>
+                        </div>
+                        <i  class="fas fa-shopping-cart cart"></i>
+                    </div>
+                    <div class="pro all men" >
+                        <img src="./images/products/m2.jpg" alt="">
+                        <div class="des">
+                            <span>gucci</span>
+                            <h5>summer shirt</h5><hr>
+                            <div class="star">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <h4>$120</h4>
+                        </div>
+                        <i id="ooo"  class="fas fa-shopping-cart cart"></i>
+                    </div> 
+                    <div class="pro all men" >
+                        <img src="./images/products/m3.jpg" alt="">
+                        <div class="des">
+                            <span>gucci</span>
+                            <h5>summer shirt</h5><hr>
+                            <div class="star">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <h4>$120</h4>
+                        </div>
+                        <i  class="fas fa-shopping-cart cart"></i>
+                    </div>            
+                    <div class="pro all men" >
+                        <img src="./images/products/m4.jpg" alt="">
+                        <div class="des">
+                            <span>H '&' M</span>
+                            <h5>SLIM DRESS</h5><hr>
+                            <div class="star">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <h4>$99</h4>
+                        </div>
+                        <i  class="fas fa-shopping-cart cart"></i>
+                    </div>                      
+                    <div class="pro all boy">
+                        <img src="./images/products/b1.jpg" alt="">
+                        <div class="des">
+                            <span>JONES</span>
+                            <h5>Military Shirt</h5><hr>
+                            <div class="star">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <h4>$63</h4>
+                        </div>
+                        <i  class="fas fa-shopping-cart cart"></i>
+                    </div>            
+                    <div class="pro all boy">
+                        <img src="./images/products/b2.jpg" alt="">
+                        <div class="des">
+                            <span>zara</span>
+                            <h5>Cartoon Classic Shirt</h5><hr>
+                            <div class="star">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <h4>$95</h4>
+                        </div>
+                        <i  class="fas fa-shopping-cart cart"></i>
+                    </div>            
+                    <div class="pro all boy">
+                        <img src="./images/products/b3.jpg" alt="">
+                        <div class="des">
+                            <span>RIV</span>
+                            <h5>Classic SHOES</h5><hr>
+                            <div class="star">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <h4>$115</h4>
+                        </div>
+                        <i  class="fas fa-shopping-cart cart"></i>
+                    </div>            
+                    <div class="pro all boy">
+                        <img src="./images/products/b4.jpg" alt="">
+                        <div class="des">
+                            <span>adidas</span>
+                            <h5>CRATIVE SPORTIVE SHOES</h5><hr>
+                            <div class="star">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <h4>$120</h4>
+                        </div>
+                        <i  class="fas fa-shopping-cart cart"></i>
+                    </div>
+                    <div class="pro all girl">
+                        <img src="./images/products/g1.jpg" alt="">
+                        <div class="des">
+                            <span>JONES</span>
+                            <h5>Military Shirt</h5><hr>
+                            <div class="star">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <h4>$63</h4>
+                        </div>
+                        <i  class="fas fa-shopping-cart cart"></i>
+                    </div>            
+                    <div class="pro all girl">
+                        <img src="./images/products/g2.jpg" alt="">
+                        <div class="des">
+                            <span>zara</span>
+                            <h5>Cartoon Classic Shirt</h5><hr>
+                            <div class="star">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <h4>$95</h4>
+                        </div>
+                        <i  class="fas fa-shopping-cart cart"></i>
+                    </div>            
+                    <div class="pro all girl">
+                        <img src="./images/products/g3.jpg" alt="">
+                        <div class="des">
+                            <span>RIV</span>
+                            <h5>Classic SHOES</h5><hr>
+                            <div class="star">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <h4>$115</h4>
+                        </div>
+                        <i  class="fas fa-shopping-cart cart"></i>
+                    </div>            
+                    <div class="pro all girl">
+                        <img src="./images/products/g4.jpg" alt="">
+                        <div class="des">
+                            <span>adidas</span>
+                            <h5>CRATIVE SPORTIVE SHOES</h5><hr>
+                            <div class="star">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <h4>$120</h4>
+                        </div>
+                        <i  class="fas fa-shopping-cart cart"></i>
+                    </div>
+                    <div class="pro all other">
+                        <img src="./images/products/o1.jpg" alt="">
+                        <div class="des">
+                            <span>JONES</span>
+                            <h5>Military Shirt</h5><hr>
+                            <div class="star">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <h4>$63</h4>
+                        </div>
+                        <i  class="fas fa-shopping-cart cart"></i>
+                    </div>            
+                    <div class="pro all other">
+                        <img src="./images/products/o2.jpg" alt="">
+                        <div class="des">
+                            <span>zara</span>
+                            <h5>Cartoon Classic Shirt</h5><hr>
+                            <div class="star">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <h4>$95</h4>
+                        </div>
+                        <i  class="fas fa-shopping-cart cart"></i>
+                    </div>            
+                    <div class="pro all other">
+                        <img src="./images/products/o3.jpg" alt="">
+                        <div class="des">
+                            <span>RIV</span>
+                            <h5>Classic SHOES</h5><hr>
+                            <div class="star">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <h4>$115</h4>
+                        </div>
+                        <i  class="fas fa-shopping-cart cart"></i>
+                    </div>            
+                    <div class="pro all other">
+                        <img src="./images/products/o4.jpg" alt="">
+                        <div class="des">
+                            <span>adidas</span>
+                            <h5>CRATIVE SPORTIVE SHOES</h5><hr>
+                            <div class="star">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <h4>$120</h4>
+                        </div>
+                        <i  class="fas fa-shopping-cart cart"></i>
+                    </div>
+                    <div class="pro all shoes">
+                        <img src="./images/products/sh1.jpg" alt="">
+                        <div class="des">
+                            <span>JONES</span>
+                            <h5>Military Shirt</h5><hr>
+                            <div class="star">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <h4>$63</h4>
+                        </div>
+                        <i  class="fas fa-shopping-cart cart"></i>
+                    </div>            
+                    <div class="pro all shoes">
+                        <img src="./images/products/sh2.jpg" alt="">
+                        <div class="des">
+                            <span>zara</span>
+                            <h5>Cartoon Classic Shirt</h5><hr>
+                            <div class="star">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <h4>$95</h4>
+                        </div>
+                        <i  class="fas fa-shopping-cart cart"></i>
+                    </div>            
+                    <div class="pro all shoes">
+                        <img src="./images/products/sh3.jpg" alt="">
+                        <div class="des">
+                            <span>RIV</span>
+                            <h5>Classic SHOES</h5><hr>
+                            <div class="star">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <h4>$115</h4>
+                        </div>
+                        <i  class="fas fa-shopping-cart cart"></i>
+                    </div>            
+                    <div class="pro all shoes">
+                        <img src="./images/products/sh4.jpg" alt="">
+                        <div class="des">
+                            <span>adidas</span>
+                            <h5>CRATIVE SPORTIVE SHOES</h5><hr>
+                            <div class="star">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <h4>$120</h4>
+                        </div>
+                        <i  class="fas fa-shopping-cart cart"></i>
+                    </div>                    
+                    <div class="pro all sport">
+                        <img src="./images/products/s1.jpg" alt="">
+                        <div class="des">
+                            <span>adidas</span>
+                            <h5>CRATIVE SPORTIVE SHOES</h5><hr>
+                            <div class="star">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <h4>$120</h4>
+                        </div>
+                        <i  class="fas fa-shopping-cart cart"></i>
+                    </div>                    
+                    <div class="pro all sport">
+                        <img src="./images/products/s2.jpg" alt="">
+                        <div class="des">
+                            <span>adidas</span>
+                            <h5>CRATIVE SPORTIVE SHOES</h5><hr>
+                            <div class="star">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <h4>$120</h4>
+                        </div>
+                        <i  class="fas fa-shopping-cart cart"></i>
+                    </div>                    
+                    <div class="pro all sport">
+                        <img src="./images/products/s3.jpg" alt="">
+                        <div class="des">
+                            <span>adidas</span>
+                            <h5>CRATIVE SPORTIVE SHOES</h5><hr>
+                            <div class="star">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <h4>$120</h4>
+                        </div>
+                        <i  class="fas fa-shopping-cart cart"></i>
+                    </div>                    
+                    <div class="pro all sport">
+                        <img src="./images/products/s4.jpg" alt="">
+                        <div class="des">
+                            <span>adidas</span>
+                            <h5>CRATIVE SPORTIVE SHOES</h5><hr>
+                            <div class="star">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <h4>$120</h4>
+                        </div>
+                        <i  class="fas fa-shopping-cart cart"></i>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+    <section id="pagination" class="section-p1">
+        <a href="#">1</a>
+        <a href="#">2</a>
+        <a href="#"><i class="fa fa-long-arrow-alt-right"></i></a>
+    </section>
+
+
+    <footer class="section-b1">
+        <div class="col-container">
+            <div class="col">
+                <a href="index.html"><img src="./images/Logo/1.png" class="logo" alt=""></a>
+                <h4>Contact</h4>
+                <p><strong>Address :</strong> said Road, Tanta, Elgharbia, Egypt</p>
+                <p><strong>Phone :</strong> +20 101 525 8039, 040 430 3091 </p>
+                <p><strong>Open :</strong> 10:00 - 22:00, Sat - Thu </p>
+                <div class="folow">
+                    <h4>Follow us</h4>
+                    <div class="icon">
+                        <a href="https://www.facebook.com/profile.php?id=100008714052340" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://github.com/magedelgndy" target="_blank" ><i class="fab fa-github"></i></a>
+                        <a href="http://www.linkedin.com/in/maged-elgndy" target="_blank" ><i class="fab fa-linkedin"></i></a>
+                        <i class="fab fa-instagram "></i>
+                        <i class="fab fa-twitter "></i>
+                        <i class="fab fa-pinterest-p"></i>
+                        <i class="fab fa-youtube"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <h4>About</h4>
+                <a href="about.html">About Us</a>
+                <a href="#">Delivery Information</a>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms '&' Conditions</a>
+                <a href="contact.html">Contact Us</a>
+            </div>            
+            <div class="col">
+                <h4>My Account</h4>
+                <a href="#">Sign In</a>
+                <a href="#">View Cart</a>
+                <a href="#">My Wallet</a>
+                <a href="#">Track My Order</a>
+                <a href="contact.html">Help</a>
+            </div>
+            <div class="col install">
+                <h4>Install Our App</h4>
+                <p>From App Store or Google Play</p>
+                <div class="row">
+                    <img src="./images/features/play.jpg" alt="">
+                    <img src="./images/features/app.jpg" alt="">
+                </div>
+                <p>Secure Payment Gateways</p>
+                <img src="./images/features/pay.png" alt="">
+            </div>
+            <a href="#"><i class="fa fa-arrow-alt-circle-up"></i></a>
+        </div>
+        <hr>
+        <div class="copyright">
+            <p>&copy; 2023 <span>Elgndy</span> All right reserved.</p>
+        </div>
+    </footer>
+    <!-- my java script files  -->
+    <script src="./script/navbar.js"></script>
+    <script src="./script/jscript.js"></script>
+    <script src="./script/imgslider.js"></script>
+    <script src="./script/category.js"></script>
+</body>
+</html>
