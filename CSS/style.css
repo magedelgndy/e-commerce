@@ -342,7 +342,8 @@ background: var(--secoend-color);
   justify-content: space-between;
   padding-top: 12px;
 }
-.index-banner {
+.index-banner,
+#banner {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -471,7 +472,7 @@ button.white {
 }
 
 footer {
-  margin-top: 20px;
+  /* margin-top: 20px; */
   display: flex;
   flex-direction: column;
   background-color: var(--bright-color);
