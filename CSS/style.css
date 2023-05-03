@@ -635,6 +635,7 @@ padding-top: 15px;
   font-size: 30px;
 }
 .contact-header{
+  background: var(--secoend-color);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -643,7 +644,7 @@ padding-top: 15px;
   height: 30vh;
 }
 .contact-header h2 span {
-  color: var(--secoend-color);
+  color: var(--bright-color);
   font-size: 30px;
 }
 #about-head{
@@ -735,10 +736,17 @@ padding-bottom: 15px;
   text-align: center;
 }
 #form-details .cont{
+      border: 3px solid var(--main-color);
+      padding: 5px;
+    border-radius: 2px;
   margin: 20px auto;
     width: 100%;
 }
 table{
+    background: var(--secoend-color);
+    /* border: 3px solid var(--main-color); */
+    /* border-radius: 15px; */
+    /* padding: 10px; */
     border-collapse: collapse;
     width: 100%;
     height: 80%;
@@ -756,15 +764,7 @@ label{
 #form-details input[type = 'radio']{
  width: 20%;
 }
-/* #form-details input,textarea{
-  width: 100%;
-  padding: 12px 15px;
-  outline: none;
-  margin-bottom: 20px;
-  border: 1px solid var(--main-color);
-  border-radius: 5px;
 
-} */
 
 input[type = 'text'],
 input[type = 'email'],
