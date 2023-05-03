@@ -20,19 +20,24 @@
 <body>
     <nav class="navbar">
         <a href="#"><img src="./images/Logo/1.png" class="logo" alt="EL-GNDY logo"></a>
+        <div class="fle">
         <ul class="navbar-nav" id="navbar">
-            <li ><a aria-current="page" href="index.html">Home</a></li>
-            <li ><a class="shop active" href="shop.html">Shop</a></li>
+            <li ><a class="active" aria-current="page" href="index.html">Home</a></li>
+            <li ><a class="shop" href="shop.html">Shop</a></li>
             <li ><a class="about" href="about.html">About</a></li>
             <li ><a class="contact"  href="contact.html">Contact US</a></li>
-            <li ><i class="fa fa-3x fa-shopping-bag bag" ></i></li>
+            <!-- <li ><i class="fa fa-3x fa-shopping-bag" ></i></li>
+            <span class="valuecart">0</span> -->
             <i class="far fa-times close" id="close"></i>
         </ul>
         <div id="mobile">
-            <i class="fa fa-2x  fa-shopping-bag" ></i>
             <i id="bar" class="fas fa-outdent fa-2xl"></i>
         </div>
+            <i class="fa fa-3x fa-shopping-bag" ></i>
+            <span id="valuecart" class="valuecart">0</span>
+            </div>
     </nav>
+
     <section id="prodetails" class="section-b1">
         <div class="singlepro">
             <img src="./images/products/a1.jpg" width="100%" class="catch" id="MainImg" alt="">
@@ -64,7 +69,7 @@
                 <option >xxxl</option>
             </select>
             <input type="number" value="1">
-            <button>Add To Cart</button>
+            <button class="fa fa-shopping-cart"> Add To Cart</button>
             <h4>Product Details</h4>
             <span>Lorem ipsum dolor sit amet consectetur adipisicing elit.
                   Nihil id, praesentium veniam suscipit totama accusamus 
